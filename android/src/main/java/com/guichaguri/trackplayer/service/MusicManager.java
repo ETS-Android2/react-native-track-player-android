@@ -314,8 +314,8 @@ public class MusicManager implements OnAudioFocusChangeListener {
             focus = new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK)
                     .setOnAudioFocusChangeListener(this)
                     .setAudioAttributes(new AudioAttributes.Builder()
-                            .setUsage(AudioAttributes.USAGE_MEDIA)
-                            .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                            .setUsage(AudioAttributes.USAGE_ASSISTANT)
+                            .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
                             .build())
                     .setWillPauseWhenDucked(alwaysPauseOnInterruption)
                     .build();
